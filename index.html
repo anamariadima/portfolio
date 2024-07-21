@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header id="header">
-        <a href="#home"><img class="logo" src="Union.png" alt="Logo"></a>
-        <nav>
-            <ul class="nav__links">
-                <li class="nav__links__item"><a class="nav__links__item__link" href="about.html">About</a></li>
-                <li class="nav__links__item"><a class="nav__links__item__link" href="#work">Work</a></li>
-                <li class="nav__links__item"><a class="nav__links__item__link" href="#contact">Contact</a></li>
-                <li class="nav__links__item"><a class="nav__links__item__link" href="https://drive.proton.me/urls/8DDDNA18SC#bFhlm2WmKCER">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="intro">
-        <h1 class="intro__description"> Hi, I’m Ana 👋 </h1>
-        <h1 class="intro__description mt-2"> Fast learner and versatile <i class="highlight">creative</i> with a focus on user experience design and design systems. </h1>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src='portofolio-entry.js'></script>
+    </head>
+    <body>
+        <div class="content">
+            <header id="header">
+                <a href="#home"><img class="logo" src="Union.svg" alt="Logo"></a>
+                <nav>
+                    <ul class="nav__links">
+                        <li class="nav__links__item"><a class="nav__links__item__link" href="about.html">About</a></li>
+                        <li class="nav__links__item"><a class="nav__links__item__link" href="#work">Work</a></li>
+                        <li class="nav__links__item"><a class="nav__links__item__link" href="#contact">Contact</a></li>
+                        <li class="nav__links__item"><a class="nav__links__item__link" href="https://drive.proton.me/urls/8DDDNA18SC#bFhlm2WmKCER">Resume</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="intro">
+                <h1 class="intro__description"> Hi, I’m Ana 👋 </h1>
+                <h1 class="intro__description"> Fast learner and versatile <i class="highlight">creative</i> with a focus on user experience design and design systems. </h1>
+            </div>
+        </div>
 
-    <section>
-        <h1>Selected work</h1>
-    </section>
+        <section">
+            <div class="content">
+                <h1 class="selectedWork__entry__title"> Selected work</h1>
+                <div class="selectedWork__entry">
+                        <img class="selectedWork__entry__image" src="Project1.png" alt="Project 1">
+                    <div class="selectedWork__entry__description">
+                        <h2 class="selectedWork__entry__description__title"> Project 1 </h2>
+                        <p class="selectedWork__entry__description__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc. </p>
+                        <button class="custom__button">See Project</button>
+                    </div>
+            </div>
+        </section>
 
-</body>
+    </body>
 </html>
