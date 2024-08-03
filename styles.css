@@ -81,6 +81,7 @@ body {
     border-color: var(--dark);
     border-radius: 20px;
     gap: 28px;
+    margin-bottom: 32px;
 }
 
 .selectedWork__entry__title {
@@ -99,6 +100,7 @@ body {
     color: var(--dark);
     font-weight: 600;
     font-size: 20px;
+    margin-block-start: 0;
 }
 
 .selectedWork__entry__description__text {
@@ -115,9 +117,22 @@ body {
     border-radius: 6px;
     padding: 16px 26px;
     background-color: var(--light);
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
 }
 
 .custom__button:hover {
     color: var(--light);
     background-color: var(--primary-color);
+}
+
+.custom__button__icon {
+    width: 24px;
+    height: 15px;
+    background-image: url(Arrow.svg);
+}
+
+.custom__button:hover > .custom__button__icon {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(3%) saturate(7493%) hue-rotate(185deg) brightness(112%) contrast(107%);
 }
