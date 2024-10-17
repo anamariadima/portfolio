@@ -17,6 +17,11 @@ body {
     background: var(--light);
 }
 
+.logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
 .content {
     margin: 0 auto;
     max-width: 1200px;
@@ -155,4 +160,20 @@ body {
 
 .no__margin {
     margin: 0;
+}
+
+.text-highlight {
+    color: #5E2BFF;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    margin: 42px;
+}
+
+.kind__words {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
