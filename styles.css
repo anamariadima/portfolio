@@ -19,7 +19,7 @@ body {
 
 .logo {
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--primary-color);
     font-size: 18px;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .nav__links__item__link {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     color: var(--dark);
     text-decoration: none;
@@ -81,6 +81,13 @@ body {
     margin-right: 10rem;
 }
 
+.intro__title {
+    font-weight: 200;
+    font-size: 22px;
+    margin-top: 20px;
+    color: var(--dark);
+}
+
 .highlight {
     color: var(--primary-color)
 }
@@ -94,8 +101,9 @@ body {
     border-style: solid;
     border-color: var(--dark);
     border-radius: 12px;
-    gap: 28px;
-    margin-bottom: 32px;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-basis: 100%;
 }
 
 .selectedWork__entry__title {
@@ -111,10 +119,22 @@ body {
 }
 
 .selectedWork__entry__description__title {
-    color: var(--dark);
-    font-weight: 600;
+    color: var(--primary-color);
+    font-weight: 500;
     font-size: 20px;
     margin-block-start: 0;
+}
+
+.selectedWork__entry__description__position {
+    color: var(--dark);
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.selectedWork__entry__description__info__colleague {
+    display: flex;
+    gap: 12px;
 }
 
 .selectedWork__entry__description__text {
@@ -124,7 +144,6 @@ body {
 }
 
 .custom__button {
-    
     color: var(--dark);
     border-width: 1px;
     border-style: solid;
@@ -135,7 +154,7 @@ body {
     margin-top: 1rem;
     display:inline-flex;
     gap: 10px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     line-height: 1.1;
 }
@@ -170,12 +189,50 @@ body {
 
 .copyright {
     text-align: center;
-    font-size: 12px;
-    margin: 42px;
+    font-size: 13px;
+    margin-top: 62px;
+    margin-bottom: 40px;
+    color: var(--dark);
 }
 
 .kind__words {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+.colleagues{
+    width: 50px;
+    height: 50px;
+}
+
+.social__media {
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--dark);
+    border-radius: 12px;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; 
+}
+
+.contact__details {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin-top: 40px;
+}
+
+.contact__details__text {
+    color: var(--dark);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.contact__links {
+    margin-top: 20px;
 }
