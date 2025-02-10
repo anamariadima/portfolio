@@ -3,31 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>👩🏻‍💼 Ana | Product designer</title>
+        <title> 👩🏻 Ana | Product designer</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
         <script src='portofolio-entry.js'></script>
     </head>
     <body>
-            <div class="content">
-                <header id="header">
-                    <a class="logo" href="#home"> Ana Dima </a></p>
-                    <nav>
-                        <ul class="nav__links">
-                            <li class="nav__links__item"><a class="nav__links__item__link" href="about.html">About</a></li>
-                            <li class="nav__links__item"><a class="nav__links__item__link" href="#work">Work</a></li>
-                            <li class="nav__links__item"><a class="nav__links__item__link" href="#contact">Contact</a></li>
-                            <li class="nav__links__item"><a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
-                        </ul>
-                    </nav>
-                </header>
+        <div class="content">
+            <header id="header">
+                <a class="logo" href="#home"> Ana Dima </a>
+                <nav>
+                    <ul class="nav__links">
+                        <li class="nav__links__item"><a class="nav__links__item__link" href="about.html">About</a></li>
+                        <li class="nav__links__item"><a class="nav__links__item__link" href="#work">Work</a></li>
+                        <li class="nav__links__item"><a class="nav__links__item__link" href="#contact">Contact</a></li>
+                        <li class="nav__links__item"><a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </header>
+            <div class="hamburger">
+                <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!-- Navigation links (hidden by default) -->
+                <div id="hamburger__menu" class="hamburger__links">
+                    <a class="nav__links__item__link" href="about.html">About</a>
+                    <a class="nav__links__item__link" href="#work">Work</a>
+                    <a class="nav__links__item__link" href="#contact">Contact</a>
+                    <a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
+                </div>
+            </div>
 
             <section id="home" class="intro section">
                 <h1 class="intro__description"> Hi there, I’m Ana! 👋 </h1>
                 <h1 class="intro__description"> Not just a <i class="highlight">designer,</i> also an easy to work with creative & a trusted partner </h1>
                 <div class="chip">
-                    <div class="circle"></div>
-                    <p class="text__chip"> Based in Prague | Previously at Waters Corp.</p>
+                    <!-- <div class="circle"></div> -->
+                    <p class="text__chip"> 🙋🏻‍♀️ Product Designer Based in Prague | Previously at Waters Corp.</p>
                 </div>
             </section>
             
@@ -46,8 +63,8 @@
                             <img class="selectedWork__entry__image" src="human experience.png" alt="A case study about observing small details and learn how to solve real problems">
                             <div class="selectedWork__entry__description">
                                 <h2 class="selectedWork__entry__project__name"> Solve for one, extend to many </h2>
-                                <p class="selectedWork__entry__description__text"> Not a traditional case study, at all, but a great human interaction one and some lessons about how to solve real life problems. </p>
-                                <a href="https://youthful-cheque-932.notion.site/Waters-case-study-151beaf216ec806f93b8e7f960d12852" target="_blank" class="cbl custom__button">See project <span class="custom__button__icon"></span></a>
+                                <p class="selectedWork__entry__description__text"> Not a traditional case study, but one about how to solve real life problems and how important are accessibility and testing for a product. </p>
+                                <a href="https://youthful-cheque-932.notion.site/Human-experience-193beaf216ec80a0a80dc1f39212da83" target="_blank" class="cbl custom__button">See project <span class="custom__button__icon"></span></a>
                             </div>
                         </div>
                     </div>
@@ -57,7 +74,7 @@
                             <img class="selectedWork__entry__image" src="hackathon.png" alt="Christmas hackathon">
                             <div class="selectedWork__entry__description">
                                 <h2 class="selectedWork__entry__project__name"> Design tokens </h2>
-                                <p class="selectedWork__entry__description__text"> Fun Christmas hackathon project - Upskilled and improved tokens solutions for Waters Corp. </p>
+                                <p class="selectedWork__entry__description__text"> Fun hackathon project - Upskilled and improved the syncing for design tokens between design and code; for Waters Corp. </p>
                                 <a href="https://youthful-cheque-932.notion.site/Xmas-Hackathon-152beaf216ec80ad986ee4282d548648" target="_blank" class="custom__button"> See project <span class="custom__button__icon"></span></a>
                         </div>
                     </div>
@@ -150,8 +167,22 @@
                 </div>
             </section>
 
-                    <p class="copyright"> © 2025 Designed by Ana with kindness and passion </p>
+                    <p class="copyright"> © 2025 Designed and implemented by Ana </p>
 
             </div>
+            <script>
+                function myFunction(e) {
+                    var x = document.getElementById("hamburger__menu");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                        console.log("been there");
+                    } else {
+                        x.style.display = "block";
+                        console.log("done that");
+                    }
+                    
+                    e.stopPropagation();
+                }
+            </script>
     </body>
 </html>
