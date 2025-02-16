@@ -4,40 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> 👩🏻 Ana | Product designer</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/styles.css">
         <script src='portofolio-entry.js'></script>
     </head>
     <body>
         <div class="content">
             <header id="header">
-                <a class="logo" href="#home"> Ana Dima </a>
-                <nav>
-                    <ul class="nav__links">
-                        <li class="nav__links__item"><a class="nav__links__item__link" href="about.html">About</a></li>
-                        <li class="nav__links__item"><a class="nav__links__item__link" href="#work">Work</a></li>
-                        <li class="nav__links__item"><a class="nav__links__item__link" href="#contact">Contact</a></li>
-                        <li class="nav__links__item"><a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
-                    </ul>
-                </nav>
-                
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </header>
-            <div class="hamburger">
-                <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                <!-- Navigation links (hidden by default) -->
-                <div id="hamburger__menu" class="hamburger__links">
-                    <a class="nav__links__item__link" href="about.html">About</a>
-                    <a class="nav__links__item__link" href="#work">Work</a>
-                    <a class="nav__links__item__link" href="#contact">Contact</a>
-                    <a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
+                <div class="header__top">
+                    <a class="logo" href="#home"> Ana Dima </a>
+                    <nav>
+                        <ul class="nav__links">
+                            <li class="nav__links__item"><a class="nav__links__item__link" href="about.html">About</a></li>
+                            <li class="nav__links__item"><a class="nav__links__item__link" href="#work">Work</a></li>
+                            <li class="nav__links__item"><a class="nav__links__item__link" href="#contact">Contact</a></li>
+                            <li class="nav__links__item"><a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a class="menu-toggler" onclick="toggleMenu()">
+                        <i class="menu-icon" alt="Menu"></i>
+                    </a>
                 </div>
-            </div>
+                <div class="hamburger">
+                    <!-- Mobile navigation links (hidden by default) -->
+                    <div id="hamburger__menu" class="hamburger__links">
+                        <a class="nav__links__item__link" href="about.html">About</a>
+                        <a class="nav__links__item__link" onclick="closeMenu()" href="#work">Work</a>
+                        <a class="nav__links__item__link" onclick="closeMenu()" href="#contact">Contact</a>
+                        <a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
+                    </div>
+                </div>
+
+            </header>
 
             <section id="home" class="intro section">
                 <h1 class="intro__description"> Hi there, I’m Ana! 👋 </h1>
@@ -123,16 +123,15 @@
                     <div class="selectedWork__entry">
                         <div class="selectedWork__entry__description">
                             <div class="selectedWork__entry__description__info__colleague">
-                                <img class="colleagues" src="caleb.png" alt="An image with Caleb Brown">
+                                <img class="colleagues" src="adi.png" alt="An image with Adrian">
                                 <div class="recommend">
-                                    <h2 class="selectedWork__entry__description__title">Caleb B.</h2>
-                                    <h2 class="selectedWork__entry__description__position"> Senior Graphic Designer</h2>
+                                    <h2 class="selectedWork__entry__description__title">Adrian M. B.</h2>
+                                    <h2 class="selectedWork__entry__description__position"> Frontend Developer </h2>
                                 </div>
                             </div>
-                            <p class="selectedWork__entry__description__text"> "Ana-Maria has proven that through hard work, follow-through, and teamwork, 
-                                she can accomplish tasks in a courteous and timely manner. Ana-Maria is well equipped to grow from the challenges that she 
-                                is presented with. Her proactivity, good staging, and fast learning skills has prepared her beautifully for your organization.
-                                I have full confidence that Ana-Maria will be an asset to your company, to help you reach new heights."</p>
+                            <p class="selectedWork__entry__description__text"> "I worked with Ana over the past two years on building a design system.
+                                Ana was in charge of putting together a components library in Figma which, we, as developers, had to implement as web components. When creating the library in Figma, Ana left no stone unturned, followed every design principle, and made sure every concern is addressed, including accessibility.
+                                Her strong eye for detail makes her a great candidate and I have no doubt in recommending her for any design related work!"</p>
                         </div>
                     </div>
                     <div class="selectedWork__entry">
@@ -158,7 +157,9 @@
             <section id="contact" class="section">
                 <h1 class="selectedWork__entry__title"> Let's get in touch!</h1>
                 <p class="default__text"> Let's chat about a possible future collaboration or simply about hobbies and design. 
-                    Bellow you have all my contact details. Thank you very much for your time! </p>
+                    Bellow you have all my contact details and if you want to see more of my work, I have some nice projects on
+                    <a class="text-highlight" target="_blank" href="https://www.behance.net/dimaana-maria">Behance.</a></p>
+                    Thank you very much for your time! </p>
                 <div class="contact__links">
                     <p class="contact__details__text"> My email: <a class="text-highlight" href="mailto:anadima@proton.me">anadima@proton.me</a> </p>
                     <p class="contact__details__text"> Behance: <a class="text-highlight" target="_blank" href="https://www.behance.net/dimaana-maria">behance.net/dimaana-maria</a> </p>
@@ -170,19 +171,6 @@
                     <p class="copyright"> © 2025 Designed and implemented by Ana </p>
 
             </div>
-            <script>
-                function myFunction(e) {
-                    var x = document.getElementById("hamburger__menu");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                        console.log("been there");
-                    } else {
-                        x.style.display = "block";
-                        console.log("done that");
-                    }
-                    
-                    e.stopPropagation();
-                }
-            </script>
+            <script src="js/functions.js"></script>
     </body>
 </html>

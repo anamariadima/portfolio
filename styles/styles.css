@@ -7,9 +7,13 @@
 :root {
     --light: #F7F6F3;
     --dark: #212121;
-    --primary-color: #5E2BFF;
+    --primary-color: #373737;
     --secondary-color: #fff;
     --tertiary-color: #E6E8CF;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +26,7 @@ body {
 
     color: var(--primary-color);
     font-size: 18px;
+    font-weight: 500;
     text-decoration: none;
     
 }
@@ -31,12 +36,11 @@ body {
 }
 
 .hamburger__links {
-    background-color: var(--secondary-color);
     display: none;
     text-align: center;
 }
 
-.menu-icon {
+.menu-toggler {
     display: none;
 }
 
@@ -47,12 +51,15 @@ body {
 }
 
 #header {
-    display: flex;
-    justify-content: space-between;
     padding: 30px 0px 10px 0px;
     position: sticky;
     top: 0px;
     background-color: rgba(247, 246, 243, 0.96);
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -91,7 +98,8 @@ body {
 }
 
 .section {
-    margin: 10rem 0 0 0;
+    margin-top: 3.75rem;
+    padding-top: 6.25rem;
 }
 
 .section__img__paragraph {
@@ -117,7 +125,7 @@ body {
 }
 
 .highlight {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .selectedWork__entry {
@@ -365,15 +373,20 @@ body {
 }
 
 @media (max-width: 720px) {
+    #header {
+        padding: 15px 0px;
+    }
+
+    .section {
+        padding-top: 0;
+    }
+
     .content {
         padding: 0 60px;
     }
 
-    #header {
-        display: flex;
-        justify-content: space-between;
-        padding: 30px 0px 0px;
-        position: inherit;
+    .logo {
+        padding: 0 5px;
     }
 
     .nav__links {
@@ -381,19 +394,22 @@ body {
     }
 
     /* Style the hamburger menu */
-    .menu-icon {
-        padding: 10px;
-        text-decoration: none;
-        display: inline-block;
-        color: var(--primary-color)
+    .menu-toggler {
+        padding: 10px 5px;
+        display: block;
+        cursor: pointer;
     }
 
-    .menu-icon:focus {
-        background-color: var(--secondary-color);
+    .menu-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url("../images/menu_icon.svg");
     }
 
     .nav__links__item__link {
         display: block;
+        text-decoration: underline;
     }
 
     .hamburger__links:active {
@@ -434,7 +450,6 @@ body {
     
     .logo {
         font-size: 16px;
-        
     }
 
     .nav__links__item__link {
