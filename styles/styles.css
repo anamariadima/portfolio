@@ -218,7 +218,7 @@ body {
 .custom__button__icon {
     width: 24px;
     height: 15px;
-    background-image: url(Arrow.svg);
+    background-image: url(/images/arrow.svg);
 }
 
 .custom__button:hover > .custom__button__icon {
@@ -269,7 +269,7 @@ body {
 .horizontal__layout {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    gap: 40px;
 
 }
 

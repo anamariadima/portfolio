@@ -3,22 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> 👩🏻 About Ana </title>
-        <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/styles.css">
+        <title> 👩🏻 Ana | About </title>
+        <link rel="stylesheet" href="/styles/reset.css">
+        <link rel="stylesheet" href="/styles/styles.css">
     </head>
     <body>
         <div class="content">
             <header id="header">
-                <a class="logo" href="home.html"> Ana Dima </a></p>
-                <nav>
-                    <ul class="nav__links">
-                        <li class="nav__links__item"><a class="nav__links__item__link" href="about.html">About</a></li>
-                        <li class="nav__links__item"><a class="nav__links__item__link" href="home.html#work">Work</a></li>
-                        <li class="nav__links__item"><a class="nav__links__item__link" href="home.html#contact">Contact</a></li>
-                        <li class="nav__links__item"><a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
-                    </ul>
-                </nav>
+                <div class="header__top">
+                    <a class="logo" href="/home.html"> Ana Dima </a>
+                    <nav>
+                        <ul class="nav__links">
+                            <li class="nav__links__item"><a class="nav__links__item__link" href="/about.html">About</a></li>
+                            <li class="nav__links__item"><a class="nav__links__item__link" href="/home.html#work">Work</a></li>
+                            <li class="nav__links__item"><a class="nav__links__item__link" href="/home.html#contact">Contact</a></li>
+                            <li class="nav__links__item"><a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a class="menu-toggler" onclick="toggleMenu()">
+                        <i class="menu-icon" alt="Menu"></i>
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <!-- Mobile navigation links (hidden by default) -->
+                    <div id="hamburger__menu" class="hamburger__links">
+                        <a class="nav__links__item__link" href="/about.html">About</a>
+                        <a class="nav__links__item__link" onclick="closeMenu()" href="/home.html#work">Work</a>
+                        <a class="nav__links__item__link" onclick="closeMenu()" href="/home.html#contact">Contact</a>
+                        <a class="nav__links__item__link" target="_blank" href="https://drive.proton.me/urls/ZP2FWHJGK0#MOn15MRe1QGs">Resume</a></li>
+                    </div>
+                </div>
+
             </header>
 
             <section class="section">
@@ -37,7 +54,7 @@
                     </div>
                     
                     <div>
-                        <img class="me__photo" src="ana.png" alt="A photo with Ana Dima">
+                        <img class="me__photo" src="/images/ana.png" alt="A photo with Ana Dima">
                     </div>
                 </div>
             </section>
@@ -95,6 +112,8 @@
             </section>
 
             <p class="copyright"> © 2025 Designed and implemented by Ana </p>
+
+            <script src="js/functions.js"></script>
 
         </div>
     </body>

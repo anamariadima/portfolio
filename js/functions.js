@@ -12,3 +12,11 @@ function closeMenu() {
     var menuContainer = document.getElementById("hamburger__menu");
     menuContainer.style.display = "none";
 }
+
+window.onclick = (event) => {
+    if(!event.target.matches ("menu-toggler")) {
+        if(menu.classList.contains ("show")) {
+            menu.classList.remove ("show")
+        }
+    }
+}
