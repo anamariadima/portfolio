@@ -4,10 +4,9 @@
 }
 
 .notes {
-    color: var(--dark);
-    opacity: 50%;
+    color: #636363;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 12px;
     max-width: 600px;
 }
@@ -23,11 +22,18 @@
     max-width: 60%;
 }
 
-.centered__div{
+.centered__div__70{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
+}
+
+.centered__div__80{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .box__info {
@@ -58,4 +64,53 @@
     min-height: 100%;
     display: flex;
     align-items: center;
+}
+
+.photo__70 {
+    max-width: 500px;
+    height: auto;
+    width: 70%;
+    min-width: 100px;
+    height: auto;
+
+}
+
+.photo__coffee {
+    max-width: 15%;
+}
+
+.photo__panda {
+    max-width: 40%;
+    border-radius: 6px;
+}
+
+.section__chip {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    display: inline-flex;
+    font-weight: 400;
+    float: none;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.paragraph__title__project {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.photo__examples__heroimage {
+    max-width: 100%;
+    margin: 20px 0px;
+}
+
+.section__thankyou {
+    margin-top: 2rem;
+    padding-top: 3rem;
 }
