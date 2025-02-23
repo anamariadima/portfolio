@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> 👩🏻 Ana | Product designer</title>
+        <title>Ana | Product designer</title>
+        <link rel="icon" type="image/x-icon" href="/images/website_icon.svg">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/styles.css">
     </head>
@@ -11,7 +12,7 @@
         <div class="content">
             <header id="header">
                 <div class="header__top">
-                    <a class="logo" href="#home"> Ana Dima </a>
+                    <a class="nav__links__item__link" href="#home"> Ana Dima</a>
                     <nav>
                         <ul class="nav__links">
                             <li class="nav__links__item"><a class="nav__links__item__link" href="/about.html">About</a></li>
@@ -40,7 +41,7 @@
 
             <section id="home" class="intro section">
                 <h1 class="intro__description"> Hi there, I’m Ana! 👋 </h1>
-                <h1 class="intro__description"> Not just a <i class="highlight">designer,</i> also an easy to work with creative & a trusted partner </h1>
+                <h1 class="intro__description"> Not just a <i>designer,</i> also an easy to work with creative & a trusted partner </h1>
                 <div class="chip">
                     <!-- <div class="circle"></div> -->
                     <p class="text__chip"> 🙋🏻‍♀️ Product Designer Based in Prague | Previously at Waters Corp.</p>
@@ -51,33 +52,34 @@
                 <h1 class="selectedWork__entry__title">Recent work</h1>
                 <div class="kind__words">
                     <div class="selectedWork__entry">
-                        <img class="selectedWork__entry__image" src="/images/waters_documentation.png" alt="A single source of truth documentation process">
+                        <img class="selectedWork__entry__image" src="/images/human_experience.webp" alt="A case study about observing small details and learn how to solve real problems">
+                        <div class="selectedWork__entry__description">
+                            <h2 class="selectedWork__entry__project__name"> Solve for one, extend to many </h2>
+                            <p class="selectedWork__entry__description__text"> Not a traditional case study, but one about how to solve real life problems and how important are accessibility and testing for a product. </p>
+                            <a href="/work/human-experience.html" class="cbl custom__button">See project <span class="custom__button__icon"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="selectedWork__entry">
+                        <img class="selectedWork__entry__image" src="/images/waters_documentation.webp" alt="A single source of truth documentation process">
                         <div class="selectedWork__entry__description">
                             <h2 class="selectedWork__entry__project__name"> Documentation Process @Waters </h2>
                             <p class="selectedWork__entry__description__text"> Created the single-source of truth documentation for Waters design system, increasing the number of applications that use it by 72.2%. </p>
                             <a href="work/waters-documentation.html" class="cbl custom__button">See project <span class="custom__button__icon"></span></a>
                         </div>
                     </div>
-                    <div class="selectedWork__entry">
-                            <img class="selectedWork__entry__image" src="/images/human_experience.png" alt="A case study about observing small details and learn how to solve real problems">
-                            <div class="selectedWork__entry__description">
-                                <h2 class="selectedWork__entry__project__name"> Solve for one, extend to many </h2>
-                                <p class="selectedWork__entry__description__text"> Not a traditional case study, but one about how to solve real life problems and how important are accessibility and testing for a product. </p>
-                                <a href="/work/human-experience.html" class="cbl custom__button">See project <span class="custom__button__icon"></span></a>
-                            </div>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="kind__words">   
-                        <div class="selectedWork__entry">
-                            <img class="selectedWork__entry__image" src="/images/hackathon.png" alt="A story about a Christmas hackathon">
-                            <div class="selectedWork__entry__description">
-                                <h2 class="selectedWork__entry__project__name"> Design tokens </h2>
-                                <p class="selectedWork__entry__description__text"> Fun hackathon project - Upskilled and improved the syncing for design tokens between design and code; for Waters Corp. </p>
-                                <a href="/work/design-tokens.html" class="custom__button"> See project <span class="custom__button__icon"></span></a>
-                        </div>
+                <div class="kind__words">   
+                    <div class="selectedWork__entry">
+                        <img class="selectedWork__entry__image" src="/images/hackathon.webp" alt="A story about a Christmas hackathon">
+                        <div class="selectedWork__entry__description">
+                            <h2 class="selectedWork__entry__project__name"> Design tokens </h2>
+                            <p class="selectedWork__entry__description__text"> Fun hackathon project - Upskilled and improved the syncing for design tokens between design and code; for Waters Corp. </p>
+                            <a href="/work/design-tokens.html" class="custom__button"> See project <span class="custom__button__icon"></span></a>
                     </div>
-                        <div class="work__entry__empty"> </div>
+                </div>
+                    <div class="work__entry__empty"> </div>
                 </div>
             </section>
 
@@ -155,16 +157,18 @@
 
             <section id="contact" class="section">
                 <h1 class="selectedWork__entry__title"> Let's get in touch!</h1>
-                <p class="default__text"> Let's chat about a possible future collaboration or simply about hobbies and design. 
-                    Bellow you have all my contact details and if you want to see more of my work, I have some nice projects on
-                    <a class="text-highlight" target="_blank" href="https://www.behance.net/dimaana-maria">Behance.</a></p>
-                    Thank you very much for your time! </p>
-                <div class="contact__links">
-                    <p class="contact__details__text"> My email: <a class="text-highlight" href="mailto:anadima@proton.me">anadima@proton.me</a> </p>
-                    <p class="contact__details__text"> Behance: <a class="text-highlight" target="_blank" href="https://www.behance.net/dimaana-maria">behance.net/dimaana-maria</a> </p>
-                    <p class="contact__details__text"> Instagram: <a class="text-highlight" target="_blank" href="https://www.instagram.com/anartisth/">instagram.com/anartisth</a> </p>
-                    <p class="contact__details__text"> Linkedin: <a class="text-highlight" target="_blank" href="https://www.linkedin.com/in/dima-ana/">linkedin.com/in/dima-ana</a> </p>
+                <div class="kind__words">   
+                    <div class="contact__entry">
+                    <p class="box__text"> Let's chat about a possible future collaboration or simply about hobbies and design.</p>
+                    <p class="box__text"> Thank you very much for your time & take care ♥️</p>
+                    <div class="contact__links">
+                        <p class="contact__details__text"> My email: <a class="text-highlight" href="mailto:anadima@proton.me">anadima@proton.me</a> </p>
+                        <p class="contact__details__text"> Instagram: <a class="text-highlight" target="_blank" href="https://www.instagram.com/anartisth/">instagram.com/anartisth</a> </p>
+                        <p class="contact__details__text"> Linkedin: <a class="text-highlight" target="_blank" href="https://www.linkedin.com/in/dima-ana/">linkedin.com/in/dima-ana</a> </p>
+                    </div>
+                    <a href="https://www.behance.net/dimaana-maria" target="_blank" class="cbl custom__button"><span class="custom__behance__icon"></span>More work on Behance</a>
                 </div>
+                    <div class="work__entry__empty"> </div>
             </section>
 
                     <p class="copyright"> © 2025 Designed and implemented by Ana </p>
