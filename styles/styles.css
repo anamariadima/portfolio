@@ -477,12 +477,6 @@ body {
         padding: 16px 0px;
     }
 
-    .hamburger__links:active {
-        background-color: var(--secondary-color);
-        display: block;
-        text-align: center;
-    }
-
     #hamburger__menu {
         display: none;
     }
