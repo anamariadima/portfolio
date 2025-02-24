@@ -339,8 +339,8 @@ body {
 .chip {
     padding-left: 14px;
     padding-right: 14px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background-color: var(--tertiary-color);
     border-radius: 4px;
     display: inline-flex;
@@ -430,8 +430,8 @@ body {
     }
 
     .photo__100 {
-        width: 50%;
-        margin-top: 10px;
+        width: 60%;
+        margin-top: 14px;
     }
 }
 
@@ -441,7 +441,8 @@ body {
     }
 
     .section {
-        padding-top: 0;
+        padding-top: 1.2rem;
+        margin: 6rem 0 0 0;
     }
 
     .content {
@@ -494,10 +495,6 @@ body {
         display: block;
     }
 
-    .section {
-        margin: 6rem 0 0 0;
-    }
-
     .work__entry__empty {
         display: none;
     }
@@ -540,6 +537,11 @@ body {
         padding: 0 10px;
     }
 
+    .section {
+        padding-top: 2rem;
+        margin: 0;
+    }
+
     .kind__words {
         display: block;
     }
@@ -550,10 +552,6 @@ body {
 
     .intro__description {
         font-size: 2rem;
-    }
-
-    .section {
-        margin: 3rem 0 0 0;
     }
     
     .selectedWork__entry__title {
@@ -582,12 +580,13 @@ body {
     }
 
     .chip {
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 8px 4px;
     }
 
     .text__chip {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .work__entry__empty {
@@ -598,5 +597,8 @@ body {
         margin-top: 5rem;
         font-size: 12px;
     }
-    
+
+    .photo__100 {
+        width: 100%;
+    }  
 }

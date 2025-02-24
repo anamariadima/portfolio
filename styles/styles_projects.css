@@ -53,7 +53,6 @@
 }
 
 .box__info {
-
     display: flex;
     align-items: center;
     padding: 20px;
@@ -86,6 +85,14 @@
 
 .photo__coffee {
     max-width: 15%;
+}
+
+.photo__illustration {
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+    min-width: 100px;
+    height: auto;
 }
 
 .photo__panda {
@@ -142,6 +149,11 @@
         margin-top: 12px;
     }
 
+    .section__projects {
+        margin-top: 1.75rem;
+        padding-top: 2.25rem;
+    }
+
     .photo__examples__heroimage {
         margin-top: 12px;
     }
@@ -177,9 +189,41 @@
         margin-right: auto;
         width: 60%;
     }
+
+    .photo__illustration {
+        width: 40%;
+    }
+
+    .box__info {
+        margin-bottom: 10px;
+    }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 480px) {
+
+    .hero__image {
+        margin-top: 4px;
+    }
+
+    .photo__illustration {
+        width: 60%;
+    }
+
+    .photo__panda {
+        margin-top: 4px;
+    }
+
+    .paragraph__title__project__right {
+        margin-top: 30px;
+    }
+
+    .paragraph__title__project {
+        font-size: 18px;
+    }
+
+    .box__info {
+        padding: 16px;
+    }
 
 }
 
