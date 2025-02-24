@@ -14,7 +14,7 @@ function closeMenu() {
 }
 
 window.onclick = (event) => {
-    if(event.target.className !== "menu-icon") {
+    if(event.target.className !== "menu-icon" && event.target.className !== "menu-toggler") {
         var menuContainer = document.getElementById("hamburger__menu");
         menuContainer.style.display = "none";
     }
