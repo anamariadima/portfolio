@@ -6,6 +6,7 @@
 .hero__image {
     max-width: 100%;
     margin: 40px 0px;
+    border-radius: 6px;
 }
 
 .notes {
@@ -120,7 +121,7 @@
     padding-right: 14px;
     padding-top: 4px;
     padding-bottom: 4px;
-    background-color: var(--tertiary-color);
+    background-color: #FFD6FD;
     border-radius: 4px;
     display: inline-flex;
     font-weight: 400;
