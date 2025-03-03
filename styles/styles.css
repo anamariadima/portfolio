@@ -26,8 +26,7 @@ body {
 .logo {
     color: var(--dark);
     font-size: 18px;
-    font-family: "Refile";
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
 }
 
@@ -61,7 +60,7 @@ body {
     padding: 30px 0px 10px 0px;
     position: sticky;
     top: 0px;
-    background-color: rgba(247, 246, 243, 0.90);
+    background-color: rgba(247, 246, 243, 0.96);
 }
 
 .header__top {
