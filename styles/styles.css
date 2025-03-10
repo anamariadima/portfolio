@@ -27,6 +27,7 @@ body {
     color: var(--dark);
     font-size: 18px;
     font-weight: 800;
+    font-family: 'Refile';
     text-decoration: none;
 }
 
@@ -195,7 +196,7 @@ body {
 
 .selectedWork__entry__description__info__colleague {
     display: flex;
-    gap: 20px;
+    gap: 12px;
 }
 
 .selectedWork__entry__description__text {
@@ -572,7 +573,7 @@ body {
     .intro__description {
         font-size: 2rem;
     }
-    
+
     .selectedWork__entry__title {
         font-size: 20px;
         margin-bottom: 8px;
@@ -605,7 +606,7 @@ body {
     }
 
     .text__chip {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .work__entry__empty {
