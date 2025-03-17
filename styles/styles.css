@@ -466,7 +466,7 @@ body {
     max-width: 600px;
 }
 
-.default__text__marginbottom {
+.default__text__mbottom {
     color: var(--dark);
     font-weight: 400;
     font-size: 16px;
