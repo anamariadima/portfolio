@@ -150,6 +150,7 @@
 .photo__examples__heroimage {
     max-width: 100%;
     margin: 20px 0px;
+    border-radius: 6px;
 }
 
 .section__thankyou {
@@ -182,10 +183,12 @@
 
     .photo__examples__heroimage {
         margin-top: 12px;
+        border-radius: 6px;
     }
 
     .photo__panda {
         margin-top: 10px;
+        border-radius: 4px;
     }
 
     .paragraph__title__project__right {
@@ -196,6 +199,14 @@
         display: block;
         margin-right: auto;
         width: 100%;
+    }
+
+    .hero__image {
+        border-radius: 4px;
+    }
+
+    .photo__examples__heroimage {
+        border-radius: 4px;
     }
 
     .centered__div__70 {
