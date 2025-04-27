@@ -75,7 +75,11 @@
 }
 
 .paragraph__container {
-    width: 100%; 
+    width: 100%;
+}
+
+.paragraph__container_maxwidth {
+    max-width: 590px;
 }
 
 .vertical__centered__image {
