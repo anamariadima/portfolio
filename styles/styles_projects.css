@@ -18,6 +18,12 @@
     border-radius: 6px;
 }
 
+.hero__image__margin__top {
+    max-width: 100%;
+    margin-top: 112px;
+    border-radius: 6px;
+}
+
 .notes {
     color: #636363;
     font-weight: 400;
@@ -178,6 +184,10 @@
 @media (max-width: 880px) {
     .hero__image {
         margin-top: 12px;
+    }
+
+    .hero__image__margin__top {
+        margin-top: 64px;
     }
 
     .section__projects {
