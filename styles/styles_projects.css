@@ -29,7 +29,7 @@
     font-weight: 400;
     font-size: 15px;
     margin-top: 12px;
-    max-width: 600px;
+    max-width: 550px;
 }
 
 .divider {
@@ -92,6 +92,10 @@
     min-height: 100%;
     display: flex;
     align-items: center;
+}
+
+.w-100-p {
+    width: 100%;
 }
 
 .photo__70 {
