@@ -367,6 +367,14 @@ body {
     height: auto;
 }
 
+.photo__aboutme {
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+    min-width: 100px;
+    height: auto;
+}
+
 .photo__centered {
     height: auto;
     width: 100%;
@@ -388,7 +396,13 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 100px;
+}
 
+.horizontal__layout__about__me {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
 }
 
 .social__media {
@@ -499,11 +513,37 @@ body {
         margin-top: 2.75rem;
         padding-top: 4.25rem;
     }
+
+    .photo__aboutme {
+        max-width: 500px;
+        height: auto;
+        width: 100%;
+        min-width: 100px;
+        height: auto;
+    }
+
+    .horizontal__layout__about__me {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        align-items: center;
+    }
 }
 
 @media (max-width: 1120px) {
     .content {
         max-width: 800px;
+    }
+
+    .horizontal__layout__about__me {
+        display: block;
+        justify-content: space-between;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .photo__aboutme {
+        max-width: 650px;
     }
     
     .section {
@@ -640,7 +680,7 @@ body {
 
 @media (max-width: 480px) {
     .content {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .section {
